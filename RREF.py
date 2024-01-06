@@ -188,7 +188,8 @@ if __name__ == '__main__':
          [2, 0, -3, -7]]
 
     A = np.array(A, dtype=np.float64)
+    print(f"Input matrix:\n{A}")
     do_ref(A)
     do_rref(A)
     np.set_printoptions(precision=6, suppress=True)
-    print(A)
+    print(f"Output matrix:\n{A}")
